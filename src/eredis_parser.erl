@@ -23,7 +23,10 @@
 
 -module(eredis_parser).
 -include("eredis.hrl").
+
+-ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
+-endif.
 
 -export([init/0, parse/2]).
 
